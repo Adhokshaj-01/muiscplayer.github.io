@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Player</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="fav3.jpg">
+    
+</head>
+
+<body>
+    <div class="main">
+        <!--hidden 00loading-->
+        <div class="load">
+            <div class="mobile">
+                Currently not avilable on Mobile Devices.
+                Open on Desktop.
+            </div>
+            <h1>
+                <span class="one">.</span><span class="two">.</span><span class="three">.</span>
+            </h1>
+        </div>
+        <!--main---div-->
+        <div class="header">
+            <div class="nav">
+                <span class="logo"><i class="fab fa-napster"></i></span>
+                <span class="logo2" title="Liked songs"><i class="fab fa-gratipay"></i></span>
+                <span class="logo3"><i class="fas fa-comments"></i></span>
+                <ul class="list">
+                    <li><a href="#" style="
+                        color: white;
+       font-weight: bold;
+       border-bottom: cyan solid 1.2px;">Home</a></li>
+                    <li><a href="#">Playlist</a></li>
+                    <li><a href="#" id="acc">Podcast</a></li>
+                </ul>
+            </div>
+
+            <div class="part" id="part">
+                <div class="icon">
+                    <i class="fas fa-check-double"></i>
+                </div>
+                <div class="part1">
+                    <h2>Pop</h2>
+                </div>
+                <div class="part2">
+
+                    <h2>Classical</h2>
+                </div>
+                <div class="part3">
+                    <h2 style="height: 50px;">Romantic</h2>
+                </div>
+            </div>
+            <div class="player">
+                <div class="option">
+                    
+                    <ul class="songs-op">
+                        <li id="sg-1" transition: ease 1s;"><a href="#"><button type="submit">
+                                    <i class="fas fa-play"></i>
+
+                                </button> --Imagine-John-Lenonn--</a></li>
+                        <li id="sg-2" style="transition: ease 1s;"><a href="#"><button type="submit">
+                                    <i class="fas fa-play"></i>
+
+                                </button> --A'more-Dean-Martin--</a></li>
+                        <li id="sg-3" style="transition: ease 1s;"><a href="#"><button type="submit">
+                                    <i class="fas fa-play"></i>
+
+                                </button> --Bezos --</a></li>
+                        <li id="sg-4" style="transition: ease 1s;"><a href="#"><button type="submit">
+                                    <i class="fas fa-play"></i>
+
+                                </button> --Perfect-One-D--</a></li>
+                        <li id="sg-5" style="transition: ease 1s;"><a href="#"><button type="submit">
+                                    <i class="fas fa-play"></i>
+
+                                </button> -In-the-ghetto-Elvis-</a></li>
+                    </ul>
+
+                </div>
+                <div class="songani">
+                    <div class="s-list">
+                        <i class="fas fa-compact-disc" id="s-l-btn" style="font-size: 50px; color: rgb(0, 0, 0);
+                "> </i>
+                    </div>
+                    <div class="song" id="song">
+                        <img id="song-img" src="imagine.jpeg">
+                    </div>
+                    <div class="butt">
+                        <button type="submit" id="play-btn">
+                            <i class="fas fa-sliders-h"></i>
+
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="range">
+                <div class="name">
+                    <h2 class="txt-ani" id="txt-ani">--Imagine-John-Lenonn--</h2>
+                </div>
+                <div class="range1">
+                    <div class="mus-btn">
+                        <i class="fas fa-step-backward" title="last song" id="last-s"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="material-icons" id="start" style="font-size: 30px;">
+                            play_arrow</i>
+                        &nbsp;&nbsp;&nbsp;
+                        <i class="fas fa-step-forward" title="next song" id="next-s"></i>
+                    </div>
+                    <div class="btn-s-mus">
+                                         
+                    </div>
+                    <div class="muisc-scale">
+                    <div class="progress">
+                        <div class="half-prog"></div>
+                    </div>
+                    <div class="timer">
+                        <span class="current">0:00</span>
+                        <span class="duration"></span>
+
+                    </div>
+                </div>
+                    <audio src="" id="main-audio"> </audio>
+                </div>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="bar">
+                <input type="search" class="s-bar" placeholder="Search">
+                <i class="fas fa-music" class="mus-i"></i>
+
+            </div>
+            <div class="info">
+                <h2>Account</h2>
+
+            </div>
+            <div class="info1">
+                <div class="hide" id="hide">
+                    <ul class="list-hide">
+                        <li><i class="fas fa-user" style="color:white;"></i> Profile</li>
+                        <li><i class="fas fa-power-off" style="color: white;"></i> Log Out</li>
+                        <li>Don't have an Account ? <span class="sign"><a href="#">Sign Up.</a></span> </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h2>Theams</h2>
+
+                </div>
+                <div class="theams">
+                    <div class="theam1" id="thm1">
+                        <img src="galaxy.jpg">
+                        <p class="th-txt" id="th1-txt">Galaxy #</p>
+                    </div>
+                    <div class="theam2" id="thm2">
+                        <img src="rain.jpg">
+                        <p class="th-txt" id="th2-txt">Rain</p>
+                    </div>
+                </div>
+                <div class="theam3" id="thm3">
+                    <img src="tree.jpg">
+                    <p class="th-txt" id="th3-txt">Snow Tree</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <div class="c-name"> <h3> <i class="fab fa-napster"></i>  Designe and developed by :</br><span id="c-names">A</span>dhokshaj</h3> </div>
+
+
+    <script src="script.js" async defer></script>
+    <script src="songlist.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.load{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+   /* background:linear-gradient(80deg ,#110e1f,#1b1730);*/
+    background: transparent;
+}
+h1{
+    
+    position: fixed;
+    top: 45%;
+    bottom: 50%;
+    left: 48%;
+    right: 50%;
+    color: whitesmoke;
+    letter-spacing: 15px;
+    
+    
+}
+.one{
+    position: relative;
+    font-size: 55px;
+    animation: ani 3s infinite;
+    transition: ease ;
+}
+.two{
+    position: relative;
+    font-size: 55px;
+    animation: ani2 3s infinite;
+    transition: ease ;
+}
+.three{
+    position: relative;
+    font-size: 55px;
+    animation: ani3 3s infinite;
+    transition: ease ;
+
+}
+
+@keyframes ani {
+    from{left: 0;}
+    to{left:  16px; }
+    from{color:gray;}
+    to{color: cyan;}
+    
+ 
+    
+}
+@keyframes ani2 {
+    from{left: 0;}
+    to{left:  25px; }
+    from{color: grey;}
+    to{color:tomato;}
+    
+ 
+    
+}
+@keyframes ani3 {
+    from{left: 0;}
+    to{left:  40px; }
+    from{color: grey;}
+    to{color: yellow;}
+ 
+    
+}
+@media screen  and (max-width:600px){
+    h1{
+        left: 39%;
+    }
+
+    
+}
+@media screen and (max-width:1300px) {
+    .load{
+        display: block;
+    }
+    .one{
+        font-size: 200px;
+        bottom: 100px;
+    }
+    .two{
+        font-size: 220px;
+        bottom: 100px;
+    }
+    .three{
+        font-size: 240px;
+        bottom: 100px;
+    }
+    
+    
+}
+
