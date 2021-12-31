@@ -698,7 +698,7 @@ body{
 }
 
 /*---responsive--*/
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1240px) {
     .header{
         display: none;
     }
