@@ -721,7 +721,7 @@ body{
 #preload{
     background: rgba(40, 40, 66, 0.4)   no-repeat center center;
     background-size: 50%;
-    backdrop-filter: blur(190px);
+    backdrop-filter: blur(200px);
     height: 100vh;
     width: 100%;
     position: fixed;
